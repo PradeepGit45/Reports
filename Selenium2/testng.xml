@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
-  <test name="Test">
+  <test name="Test" enabled="false">
     <classes>
       
       <class name="practice.expandtesting.autoComplete"/>
@@ -43,5 +43,12 @@
       <class name="Selenium1.nestedDOM"/>
       <class name="practice.expandtesting.jsError"/>
     </classes>
-  </test> <!-- Test -->
+  </test> 
+  
+  <test name="Test1" enabled="true">
+    <classes>
+    <class name="Reports.ExtentReportsTest"></class>
+    </classes>
+  </test>		
+		<!-- Test -->
 </suite> <!-- Suite -->
