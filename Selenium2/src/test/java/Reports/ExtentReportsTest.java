@@ -16,7 +16,7 @@ public class ExtentReportsTest {
 	{
 		
 			
-			ExtentSparkReporter spark = new ExtentSparkReporter("./Reports/report3.html");
+			ExtentSparkReporter spark = new ExtentSparkReporter("./Reports/ExtentReport1.html");
 			ExtentReports report = new ExtentReports();
 			report.attachReporter(spark);
 			
@@ -33,7 +33,7 @@ public class ExtentReportsTest {
 			subTest2.log(Status.PASS, "2nd child test passed");
 		
 		
-		
+			System.out.println("Report about to generated...");
 		
 		      report.flush();
 		
